@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An online educational resource for learning Old English">
+    <base href="/">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/oeccss.css">
+    <link rel="icon" href="/images/favicon.png">
+    <title>{{ title or "Old English Online" }}</title>
+  </head>
+  <body class="container-fluid">
+    {% include "partials/header.njk" %}
+    <main id="mainwrapper" class="container">
+      {{ content | safe }}
+    </main>
+    {% include "partials/footer.njk" %}
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>
