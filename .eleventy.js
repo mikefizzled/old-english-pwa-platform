@@ -17,5 +17,7 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: false,
 
     dataTemplateEngine: false,
+
+    pathPrefix: "/old-english-pwa-platform/"
   };
 };
