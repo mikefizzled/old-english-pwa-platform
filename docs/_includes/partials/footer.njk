@@ -1,16 +1,19 @@
 <footer class="row">
-    <div class="col-xs-6">
-        <p><a href="/">Home</a> | <a href="/courseindex/">Index</a> | <a href="/about/">About</a></p>
-        <p>Project version 2.6.3 <a href="/patchnotes/">Patch Notes</a> here</p>
-    </div>
-    <div class="col-xs-6">
-        <p>&copy; 2023 — Victoria Koivisto-Kokko — <a href="/license/">Licensing</a></p>
-        <p class="hidden-xs">Feedback? Email
-            <u>contact@oldenglish.info</u> or find me
-            <a href="https://twitter.com/Vkkokko" rel="noopener" target="_blank">
-                @vkkokko
-                <i class="fab fa-twitter"></i>
-            </a>
-        </p>
-    </div>
+  <div class="col-xs-6">
+    <p>
+      <a href="{{ '/' | url }}">Home</a> | <a href="{{ '/courseindex/' | url }}">Index</a> |
+      <a href="{{ '/about/' | url }}">About</a>
+    </p>
+    <p>Project version 2.6.3 <a href="{{ '/patchnotes/' | url }}">Patch Notes</a> here</p>
+  </div>
+  <div class="col-xs-6">
+    <p>&copy; 2023 — Victoria Koivisto-Kokko — <a href="{{ '/license/' | url }}">Licensing</a></p>
+    <p class="hidden-xs">
+      Feedback? Email <u>contact@oldenglish.info</u> or find me
+      <a href="https://twitter.com/Vkkokko" rel="noopener" target="_blank">
+        @vkkokko
+        <i class="fab fa-twitter"></i>
+      </a>
+    </p>
+  </div>
 </footer>

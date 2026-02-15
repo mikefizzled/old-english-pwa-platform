@@ -63,7 +63,6 @@
 //     const $container = $('#question-wrapper');
 //     let filename = $container.data('table-file');
 
-
 //     $(this).addClass('hidden');
 //     $('#table-submit').removeClass('hidden');
 
@@ -71,7 +70,6 @@
 // });
 
 // });
-
 
 // function loadQuestionsInto($container, filename) {                 // Now container=questionWrapper (where the questions are stored on the page)
 // // exit if we don't have all params
@@ -140,7 +138,6 @@
 
 // return wasUserCorrect;
 // }
-
 
 // //code for the quiz button
 // function tableQuizCreate($container, filename) {
