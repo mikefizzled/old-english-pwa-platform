@@ -3,21 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "dev": "eleventy --serve",
-  "build": "eleventy",
-
-  "format": "prettier . --write",
-  "format:check": "prettier . --check",
-
-  "lint:js": "eslint .",
-  "lint:css": "stylelint \"**/*.css\"",
-  "lint:html": "htmlhint \"**/*.{html,njk}\"",
-
-  "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
-  "lint:all": "npm run lint:js; npm run lint:css; npm run lint:html"
-},
-
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:html": "npm run build && htmlhint \"dist/**/*.html\"",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
+    "lint:all": "npm run lint:js; npm run lint:css; npm run lint:html"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikefizzled/old-english-pwa-platform.git"
@@ -33,11 +29,11 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@eslint/js": "^9.39.2",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "globals": "^17.3.0",
     "htmlhint": "^1.9.1",
     "prettier": "^3.8.1",
-    "stylelint": "^16.26.1",
+    "stylelint": "^17.3.0",
     "stylelint-config-standard": "^39.0.1"
   }
 }
